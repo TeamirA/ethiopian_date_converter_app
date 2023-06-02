@@ -1,0 +1,24 @@
+//import 'package:ethiopian_date_converter/ethiopian_to_gregorian_converter_page.dart';
+import 'package:ethiopian_date_converter/home_page.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Ethiopian 'Date' Converter",
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+        useMaterial3: true,
+      ),
+      home: const HomePage(),
+    );
+  }
+}
